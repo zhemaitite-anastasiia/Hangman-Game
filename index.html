@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>HangmanForFoodies</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
+
 </head>
 
 <body>
-    <div class="content">
-        <header>
-            <div id="gamename">
-                <h1>HUNGry GAMES hangman</h1>
-            </div>
-        </header>
-        <div class="foodimage">
-            <img src="assets/images/food.jpg">
-        </div>
-            
-   
-    <div class="gamearea">
-                <p>Press ANY key to get started!</p>
-                <br>
-                <script type="text/javascript">
-                	var html =
+    <div class="container">
+        <div class="jumbotron">
+            <h1>HUNGry Games Hangman</h1>
+            <p>Press ANY Key to get Started!</p>
+    </div>
 
-                "<p1>Wins: </p1>"
-                "<br>"
-                "<p2>Current word: </p2>"
-                "<br>"
-                "<p3>Number of Guesses Remaining: </p3>"
-                "<br>"
-                "<p4>Letters Already Guessed: </p4>"
-            </script>
-
-            </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Current Word</h3>
         </div>
-      
+        <div class="panel-body">
+            <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+        </div>
+    </div>
+     
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Letters already Guessed: <span id="wrongGuesses"></span>
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Number of Guesses Remaining: <span id="numGuesses"></span>
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Wins: <span id="winCounter">0</span>
+        </div>
+    </div>
+    
+  
+    
+</div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
-
 </html>
