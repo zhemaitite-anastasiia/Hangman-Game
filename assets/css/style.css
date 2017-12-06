@@ -1,36 +1,15 @@
-.foodimage{
-	float:left;
+.jumbotron {
+	background-color: #FFA500;
 }
 
-#gamename{
-	background-color: #fff;
-
-
+p{
+	text-align: center;
 }
+
 h1{
-	font-size:30px;
-	color:#000;
 	text-align:center;
 }
-.gamearea{
-	background-color: #fff;
-	float:left;
-	width:54%;
-	height:640px;
-	background-color:#000;
-	color:#fff;
-}
 
-h3{
-	font-size: 1.5em;
-}
-h4{
-
-	font-size: 1.5em;
-}
-h5{
-	font-size: 1.5em;
-}
-h6{
-	font-size: 1.5em;
+.panel-heading {
+	background-color: #FFA500;
 }
